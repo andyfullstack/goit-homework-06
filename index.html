@@ -28,22 +28,22 @@
   <body class="body-studia-page">
     <!-- Header -->
 
-    <!-- <header class="header">
+    <header class="header">
       <div class="header-container container">
-        <nav class="header-container">
+        <nav class="header-nav-container">
           <a class="header-link link" href="./index.html"
-            >Web<span class="header-nav-logo">Studio</span></a
-          >
+            >Web<span class="header-nav-logo">Studio</span>
+          </a>
           <ul class="header-list list">
             <li>
               <a class="header-nav-link link current" href="./index.html"
-                >Studio</a
-              >
+                >Studio
+              </a>
             </li>
             <li>
               <a class="header-nav-link link" href="./portfolio.html"
-                >Portfolio</a
-              >
+                >Portfolio
+              </a>
             </li>
             <li>
               <a class="header-nav-link link" href="">Contacts</a>
@@ -56,18 +56,27 @@
               <a
                 class="header-address-link link"
                 href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+                >info@devstudio.com
+              </a>
             </li>
             <li>
               <a class="header-address-link link" href="tel:+110001111111"
-                >+11 (000) 111-11-11</a
-              >
+                >+11 (000) 111-11-11
+              </a>
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu-toggle-icon" width="32" height="22">
+            <use href="./images/icons.svg#lines"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <!-- Hero -->
@@ -573,8 +582,52 @@
           <button class="modal-form-button" type="submit">Send</button>
         </form>
       </div>
+    </div> -->
+
+    <!-- Mobile Menu  -->
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-toggle-icon" width="8" height="8">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobale-menu-list">
+          <a class="mobile-menu-link link" href="./index.html">Studio</a>
+        </li>
+        <li class="mobile-menu-list">
+          <a class="mobile-menu-link link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile-menu-list">
+          <a class="mobile-menu-link link" href="">Contacts</a>
+        </li>
+      </ul>
+      <address class="header-address">
+        <ul class="address-container">
+          <li>
+            <a class="header-address-link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com
+            </a>
+          </li>
+          <li>
+            <a class="header-address-link link" href="tel:+110001111111"
+              >+11 (000) 111-11-11
+            </a>
+          </li>
+        </ul>
+      </address>
     </div>
 
-    <script src="./js/modal.js"></script> -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
+
+    <!-- <script src="./js/modal.js"></script> -->
   </body>
 </html>

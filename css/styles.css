@@ -75,8 +75,8 @@ button {
     outline: none;
     font-family: inherit;
     cursor: pointer;
-    border: none;
     border-radius: 4px;
+    border: none;
 }
 
 /* Base styles for small devices */
@@ -93,7 +93,7 @@ button {
 
 }
 
-/* Tablen screen  */
+/* Tablet screen  */
 
 @media screen and (min-width: 768px) {
     .container {
@@ -101,7 +101,7 @@ button {
     }
 }
 
-/* Deskltop screen  */
+/* Desktop screen  */
 
 @media screen and (min-width: 1158px) {
     .container {
@@ -146,6 +146,18 @@ button {
 
 .header {}
 
+@media only screen and (max-width: 767px) {
+
+    .header-address,
+    .header-list {
+
+        display: none;
+    }
+
+    .header-container {
+        padding: 24px 16px;
+    }
+}
 
 .header-container {
     display: flex;
@@ -154,24 +166,20 @@ button {
 
 }
 
+.header-nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .header-nav-link {
     padding: 24px 0;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    /* NAVY BLUE */
-
     outline: none;
     color: var(--navi-blue-color);
-
-    /* Автоперевірка - APPROVE */
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* ==================================================== */
-    /* Автоперевірка - not APPROVE */
-    transition-property: color, background-color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .header-link {
@@ -187,9 +195,28 @@ button {
 
     color: var(--navi-blue-color);
 
-
-
 }
+
+.header-nav-logo {
+
+    color: #404bbf;
+}
+
+
+/* .header-list {
+
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--navi-blue-color);
+    justify-content: space-between;
+    width: 261px;
+    display: flex;
+    gap: 40px;
+    padding: 24px 0;
+} */
+
+
 
 .current {
     color: var(--iris-color);
@@ -217,38 +244,8 @@ button {
 
 }
 
-/* .header-nav-link:active {
-
-color: var(--ocean-color);
-text-decoration: underline;
-}  */
-
-.header-nav-logo {
-
-    color: #404bbf;
-}
-
-.header-list {
-
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--navi-blue-color);
-    justify-content: space-between;
-    /* margin: 24px 332px 24px 76px; */
-    width: 261px;
-    display: flex;
-    gap: 40px;
-    padding: 24px 0;
-
-
-
-
-}
-
 .header-address {
     font-style: normal;
-
 
 }
 
@@ -266,7 +263,6 @@ text-decoration: underline;
     letter-spacing: 0.02em;
     color: var(--slate-color);
     padding: 24px 0;
-
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
@@ -274,7 +270,6 @@ text-decoration: underline;
 .header-address-link:active,
 .header-address-link:hover,
 .header-address-link:focus {
-    /* OCEAN */
     color: var(--ocean-color);
 
 }
@@ -335,7 +330,6 @@ text-decoration: underline;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-
 }
 
 .hero-btn:hover,
@@ -353,7 +347,7 @@ text-decoration: underline;
   | Benefits
   |============================
 */
-
+/* Mobile benefits */
 @media screen and (max-width: 767px) {
     .benefits-container {
         display: block;
@@ -392,7 +386,7 @@ text-decoration: underline;
     }
 }
 
-
+/* Tablet benefits  */
 @media screen and (min-width: 768px) and (max-width: 1157px) {
 
     .benefits-container {
@@ -434,19 +428,17 @@ text-decoration: underline;
     }
 }
 
-
+/* Desktop benefits  */
 @media screen and (min-width: 1158px) {
 
     .benefits-container {
         display: flex;
         gap: 24px;
-
     }
 
     .benefits-list {
 
         width: calc ((100% - 3 * 24px) / 4);
-
     }
 
     .benefits-containet-item {
@@ -468,11 +460,9 @@ text-decoration: underline;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
-
         color: var(--navi-blue-color);
 
     }
-
 
     .benefits-item {
 
@@ -1325,4 +1315,106 @@ footer {
     line-height: 1.2;
     letter-spacing: 0.48px;
     text-decoration: underline;
+}
+
+/**
+  |============================
+  | Mobile Menu
+  |============================
+*/
+
+.menu-toggle {
+    min-height: 32px;
+    min-width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-toggle-icon {
+    stroke: var(--navi-blue-color)
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: #fff;
+    z-index: 999;
+    box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+    min-height: 24px;
+    min-width: 24px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    border-radius: 50%;
+    border: 1px solid #E7E9FC;
+
+
+
+
+
+}
+
+.menu-toggle-icon {
+    fill: var(--navyblue, #2E2F42);
+
+
+}
+
+
+
+.mobile-menu {}
+
+.mobale-menu-list {
+
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--navi-blue-color);
+    justify-content: space-between;
+    width: 261px;
+    display: flex;
+    gap: 40px;
+    padding: 24px 0;
+}
+
+.mobale-menu-link {
+    margin-right: 76px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: var(--navi-blue-color);
 }
