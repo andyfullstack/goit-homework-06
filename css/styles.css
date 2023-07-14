@@ -88,7 +88,7 @@ button {
     margin: 0 auto;
     padding: 0 15px;
 
-    outline: 2px solid teal;
+    /* outline: 2px solid teal; */
     /* width: 1158px; */
 
 }
@@ -203,7 +203,7 @@ button {
 }
 
 
-/* .header-list {
+.header-list {
 
     font-weight: 500;
     line-height: 1.5;
@@ -215,7 +215,7 @@ button {
     gap: 40px;
     padding: 24px 0;
 }
- */
+
 
 
 
