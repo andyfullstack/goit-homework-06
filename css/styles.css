@@ -691,7 +691,7 @@ button {
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
     .section-team {
         background-color: var(--cloud-color);
-        padding: 0;
+        padding: 96px;
     }
 
     .team-container {
@@ -958,6 +958,7 @@ button {
 @media only screen and (max-width: 767px) {
     .footer {
         background: var(--navi-blue-color);
+        padding: 96px 15px;
     }
 
     .footer-flex {
@@ -1073,7 +1074,7 @@ button {
 
     .footer {
         background: var(--navi-blue-color);
-        padding: 96px 15px;
+        /* padding: 96px 15px; */
     }
 
     .footer-flex {
