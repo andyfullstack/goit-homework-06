@@ -13,7 +13,6 @@
     --white-color: #FFFFFF;
     --dairy-color: #FCFCFC;
 
-
 }
 
 /**
@@ -21,7 +20,6 @@
   | Custom Studio style
   |============================
 */
-
 
 body {
 
@@ -46,7 +44,6 @@ ol {
     list-style: none;
     margin: 0;
     padding: 0;
-
 
 }
 
@@ -337,7 +334,6 @@ button {
         color: var(--ocean-color);
 
     }
-
 }
 
 /**
@@ -371,7 +367,7 @@ button {
     }
 }
 
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: 321px) {
     .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
             url(../images/bg/bg_tab@1x.jpg);
@@ -386,6 +382,21 @@ button {
                 url(../images/bg/bg_tab@2x.jpg);
         }
     }
+
+    .section-hero-title {
+
+
+        margin: auto;
+        text-align: left;
+        max-width: 320px;
+        margin-bottom: 72px;
+        font-size: 36px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        color: var(--white-color);
+
+    }
+
 }
 
 @media only screen and (min-width: 769px) {
@@ -403,21 +414,20 @@ button {
                 url(../images/bg/bg_pc@2x.jpg);
         }
     }
+
+    .section-hero-title {
+
+        max-width: 496px;
+        margin-bottom: 36px;
+        font-size: 56px;
+
+    }
 }
 
-
-.section-hero-title {
-
-
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 496px;
-    margin-bottom: 48px;
-    font-size: 56px;
-    line-height: 1.07;
-    letter-spacing: 0.02em;
-    color: var(--white-color);
-
+@media only screen and (min-width: 1158px) {
+    .section-hero-title {
+        margin-bottom: 48px;
+    }
 }
 
 .hero-btn,
@@ -457,6 +467,7 @@ button {
   |============================
 */
 /* Mobile benefits */
+
 @media screen and (max-width: 767px) {
     .benefits-container {
         display: block;
@@ -483,7 +494,6 @@ button {
         letter-spacing: 0.02em;
         color: var(--navi-blue-color);
     }
-
 
     .benefits-item {
 
@@ -537,6 +547,8 @@ button {
     }
 }
 
+/* Mobile benefits */
+/* Tablet benefits  */
 /* Desktop benefits  */
 @media screen and (min-width: 1158px) {
 
@@ -608,6 +620,8 @@ button {
   | What are we Doing
   |============================
 */
+/* Mobile & */
+/* Tablet Projects  */
 
 @media only screen and (max-width: 1157px) {
 
@@ -656,6 +670,7 @@ button {
   | Our Team
   |============================
 */
+/* Mobile Projects */
 @media only screen and (max-width: 767px) {
     .section-team {
         padding-bottom: 48px;
@@ -672,6 +687,7 @@ button {
     }
 }
 
+/* Tablet Projects  */
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
     .section-team {
         background-color: var(--cloud-color);
@@ -698,6 +714,7 @@ button {
 
 }
 
+/* Desktop Projects  */
 @media only screen and (min-width: 1158px) {
 
 
@@ -838,6 +855,7 @@ button {
     text-transform: capitalize;
 }
 
+/* Mobile customers */
 @media only screen and (max-width: 767px) {
     .customer-list {
         display: flex;
@@ -858,6 +876,7 @@ button {
     }
 }
 
+/* Tablet customers */
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
     .customer-list {
 
@@ -880,6 +899,7 @@ button {
     }
 }
 
+/* Desktop customers */
 @media only screen and (min-width: 1158px) {
     .customer-list {
 
@@ -934,6 +954,7 @@ button {
   |============================
 */
 
+/* Mobile footer */
 @media only screen and (max-width: 767px) {
     .footer {
         background: var(--navi-blue-color);
@@ -1047,6 +1068,7 @@ button {
     }
 }
 
+/* Tablet footer */
 @media only screen and (min-width: 768px) and (max-width: 1157px) {
 
 
@@ -1158,6 +1180,7 @@ button {
     }
 }
 
+/* Desktop footer */
 @media only screen and (min-width: 1158px) {
 
 
@@ -1238,14 +1261,10 @@ button {
     }
 }
 
-
-
 .footer-logo {
 
     color: var(--cloud-color);
 }
-
-
 
 .footer-social-list {
 
@@ -1596,10 +1615,6 @@ button {
   |============================
 */
 
-
-
-
-
 .modal-container {
     margin-bottom: 8px;
 
@@ -1713,8 +1728,6 @@ button {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--light-slate-color);
-
-
 }
 
 .modal-form-checkbox {}
@@ -1734,9 +1747,7 @@ button {
         border 250ms cubic-bezier(0.4, 0, 0.2, 1),
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-
 }
-
 
 .modal-form-checkbox:checked+.modal-form-agreement .modal-form-custom-checkbox {
 
@@ -1846,9 +1857,6 @@ button {
 
 }
 
-
-.mobile-menu {}
-
 .mobile-menu-list {
 
     font-weight: 500;
@@ -1873,7 +1881,6 @@ button {
     text-transform: capitalize;
 
 }
-
 
 .mobile-menu {
     margin-bottom: auto;
