@@ -958,7 +958,6 @@ button {
 @media only screen and (max-width: 767px) {
     .footer {
         background: var(--navi-blue-color);
-        padding: 96px 15px;
     }
 
     .footer-flex {
