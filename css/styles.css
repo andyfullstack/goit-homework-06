@@ -697,7 +697,6 @@ button {
         margin: 72px auto;
         background: var(--white-color);
         width: 264px;
-
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
         border-radius: 0px 0px 4px 4px
     }
@@ -1559,8 +1558,17 @@ button {
     .modal {
 
         max-width: 392px;
+        width: 100%;
+
 
     }
+
+    .modal-caption {
+        max-width: 360px;
+        min-height: 10px;
+
+    }
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -1614,10 +1622,9 @@ button {
 .modal-caption {
 
     display: block;
-    font-family: Roboto;
     text-align: center;
     margin-bottom: 16px;
-    width: 360px;
+    max-width: 360px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.32px;
@@ -1639,7 +1646,7 @@ button {
     position: relative;
 }
 
-.modal-form {}
+
 
 .modal-form-label {
 
@@ -1704,7 +1711,7 @@ button {
 
 
     font-size: 12px;
-    width: 360px;
+    width: 100%;
     height: 120px;
     padding: 8px 16px;
     line-height: 1.17;
@@ -1960,6 +1967,12 @@ button {
         gap: 20px;
     }
 
+    .mobile-address-list .currentt {
+        color: rgb(245, 126, 0);
+        /* position: relative; */
+
+    }
+
 }
 
 .mobile-menu-link:hover,
@@ -1969,7 +1982,7 @@ button {
 .email-address-link:hover,
 .email-address-link:focus {
     outline: none;
-    color: var(--ocean, #404BBF);
+    color: var(--ocean-color);
 
     /* text-decoration: none; */
     /* font-style: inherit; */
@@ -1983,11 +1996,20 @@ button {
 
 }
 
+
 @media only screen and (min-width: 428px) {
     .mobile-social-list {
 
         gap: 56px;
     }
+
+    .currentt {
+        color: var(--iris-color);
+        /* position: relative; */
+
+    }
+
+
 }
 
 .mobile-social-item {
@@ -1997,10 +2019,10 @@ button {
 }
 
 .mobile-social-link {
+    display: flex;
     outline: none;
     width: 100%;
     height: 100%;
-    display: flex;
     background-color: var(--iris-color);
     border-radius: 50%;
     justify-content: center;
@@ -2032,7 +2054,7 @@ button {
 
 }
 
-/* .current::after {
+/* .currentt::after {
     content: '';
     position: absolute;
     width: 100%;
