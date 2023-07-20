@@ -350,7 +350,8 @@ button {
   |============================
 */
 
-.hero {
+
+/* .hero {
     padding-top: 112px;
     padding-bottom: 112px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
@@ -362,11 +363,89 @@ button {
     max-width: 1440px;
     margin: 0 auto;
     height: 432px;
+} */
+
+
+@media screen and (min-width: 320px) and (max-width: 428px) {
+    .hero {
+        /* padding: 112px 0 112px 0; */
+        background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/bg_mob@1x.jpg);
+        background-size: cover;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        max-width: 1440px;
+        margin: 0 auto;
+        height: 432px;
+    }
+
+    .section-hero-title {
+
+        margin: 0 auto;
+        text-align: center;
+        max-width: 320px;
+        margin-bottom: 72px;
+        font-size: 36px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        color: var(--white-color);
+
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/bg_mob@2x.jpg);
+            background-size: cover;
+        }
+    }
 }
+
+@media screen and (min-width: 429px) and (max-width: 768px) {
+    .hero {
+        background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/bg_tab@1x.jpg);
+        /* padding: 112px 0 112px 0; */
+    }
+
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/bg_tab@2x.jpg);
+            background-size: cover;
+        }
+    }
+}
+
+/* PC version */
+
+@media screen and (min-width: 769px) {
+    .hero {
+        background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/bg_pc@1x.jpg);
+        padding: 188px 0 188px 0;
+        background-size: cover;
+    }
+
+
+
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+            background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/bg_pc@2x.jpg);
+            background-size: cover;
+        }
+    }
+}
+
 
 /* Retina Screen  */
 
-@media (min-device-pixel-ratio: 2),
+/* @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .hero {
@@ -389,29 +468,30 @@ button {
             background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
                 url(../images/bg/bg_tab@2x.jpg);
         }
-    }
+    } */
 
-    .section-hero-title {
+.section-hero-title {
 
-        margin: 0 auto;
-        text-align: center;
-        max-width: 320px;
-        margin-bottom: 72px;
-        font-size: 36px;
-        line-height: 1.07;
-        letter-spacing: 0.02em;
-        color: var(--white-color);
-
-    }
+    margin: 0 auto;
+    text-align: center;
+    max-width: 320px;
+    margin-bottom: 72px;
+    font-size: 36px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: var(--white-color);
 
 }
 
+
+
 @media only screen and (min-width: 768px) {
-    .hero {
+    /* .hero {
         background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
             url(../images/bg/bg_pc@1x.jpg);
 
     }
+
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -420,7 +500,7 @@ button {
             background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)),
                 url(../images/bg/bg_pc@2x.jpg);
         }
-    }
+    } */
 
     .section-hero-title {
 
@@ -705,18 +785,12 @@ button {
 
     .team-list {
 
-        /* margin: 0 auto;
-        margin-bottom: 72px; */
-
         background: var(--white-color);
         width: 264px;
         box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
         border-radius: 0px 0px 4px 4px
     }
 
-    .team-section::not(:last-child) {
-        margin-bottom: 0;
-    }
 }
 
 /* Tablet Projects  */
