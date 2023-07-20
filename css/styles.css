@@ -269,13 +269,14 @@ button {
 
     .header-address {
         font-style: normal;
+        margin-left: auto;
 
     }
 
     .address-container {
         display: flex;
         gap: 40px;
-        margin-left: 332px;
+
     }
 
     .header-address-link {
@@ -356,7 +357,6 @@ button {
     .hero {
         /* padding: 112px 0 112px 0; */
         background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/bg_mob@1x.jpg);
-        background-size: cover;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         background-repeat: no-repeat;
         background-size: cover;
@@ -392,8 +392,6 @@ button {
     .hero {
         background: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/bg/bg_tab@1x.jpg);
         /* padding: 112px 0 112px 0; */
-
-
 
     }
 
@@ -603,6 +601,7 @@ button {
         row-gap: 72px;
         column-gap: 24px;
 
+
     }
 
     .benefits-list {
@@ -662,6 +661,8 @@ button {
         border-radius: 4px;
         background-color: #f4f4fd;
 
+
+
     }
 
 
@@ -689,6 +690,7 @@ button {
 .benefits-containet-item:hover,
 .benefits-containet-item:focus {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 700ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
