@@ -289,12 +289,6 @@ button {
 
     }
 
-    /* .current::after {
-
-        bottom: -1px;
-
-    } */
-
     .header-list {
 
         font-weight: 500;
@@ -698,7 +692,7 @@ button {
 /* Mobile Projects */
 @media only screen and (max-width: 767px) {
     .section-team {
-        padding-bottom: 48px;
+        padding-bottom: 1px;
         background-color: var(--cloud-color);
     }
 
@@ -711,7 +705,7 @@ button {
         border-radius: 0px 0px 4px 4px
     }
 
-    .team-list::not(:last-child) {
+    .team-section::not(:last-child) {
         margin-bottom: 0;
     }
 }
